@@ -326,10 +326,10 @@ footer{
         gap: 1.25rem;
     }
     .div-informacion-contacto h2{
-        font-size: 1.25rem;
+        font-size: .9375rem;
     }
     .div-redes h2{
-        font-size: 1.25rem;
+        font-size: .9375rem;
     }
 }
 @media(max-width:375px){
