@@ -1,0 +1,574 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.iso-home{
+    height: 5rem;
+}
+.color-nav{
+    background-color: #00425A;
+    color: #F0EFE7;
+}
+.color-nav2{
+    color: #F0EFE7;
+    font-size: .9375rem;
+}
+.boton-buscar{
+    color: #F0EFE7;
+    border-color: #F0EFE7;
+}
+
+
+
+.seccion-1-inicio{
+    background: url(../assets/img/logotipo.png);
+    background-size: cover;
+    background-color: #BFDB38;
+    background-position: 60%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-left: 4.375rem;
+}
+.clase-logo{
+    object-fit: contain;
+    width: 56.25rem;
+}
+.clase-iso{
+    object-fit: contain;
+    height: 18.75rem;
+    padding: .625rem;
+}
+
+
+
+.seccion-2-inicio{
+    background-color: #BFDB38;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 10.625rem;
+}
+.seccion-2-inicio div p{
+    text-align: justify;
+    border: .125rem solid black;
+    margin-right: 1.875rem;
+    padding: .875rem;
+    font-size: 1.5625rem;
+    background-color: #00425A;
+    color: #F0EFE7;
+    height: 10.625rem;
+    text-indent: .625rem;
+}
+.div-valores-empresa{
+    text-align: right;
+    color: #F0EFE7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.div-valores-empresa div{
+    text-align: center;    
+    background-color: #00425A;
+    height: 3.125rem;
+    border: .125rem solid #02005a;
+    border-right: 0 solid #00425A;
+    padding: .3125rem;
+}
+.seccion-3-inicio{
+    background-color: #BFDB38;
+    height: 21.875rem;
+    align-content: center;
+}
+.seccion-3-inicio h2{
+    text-align: center;
+    text-decoration: underline;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+}
+.carrusel{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10rem;
+}
+.categoria-carrusel{
+    flex-direction: column;
+    text-align: center;
+}
+.categoria-carrusel img{
+    border-radius: 1.25rem 1.25rem 1.25rem 1.25rem;
+    border: .0625rem solid #F0EFE7;
+}
+.seccion-4-inicio{
+    background-color: #BFDB38;
+    height: 31.25rem;
+    text-align: center;
+    text-decoration: underline;
+}
+.seccion-4-inicio h2{
+    padding-top: 3.75rem;
+}
+.div-instagram{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+    gap: 1.25rem;
+}
+.div-instagram img{
+    object-fit: contain;
+    height: 18.75rem;
+    width: 18.75rem;
+    padding-top: 3.125rem;
+}
+footer{
+    background-color: #00425A;
+    color: #F0EFE7;
+    height: 11.25rem;
+    font-size: 1.25rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 3.75rem 3.75rem 3.75rem;
+    grid-template-areas:
+    "f1 f2 f3"
+    "f1 f2 f3"
+    "f1 f2 f3";
+}
+.ubicacion{
+    grid-area: f1;
+    justify-self: center;
+}
+.contacto{
+    grid-area: f2;
+    justify-self: center;
+}
+.seguinos{
+    grid-area: f3;
+    justify-self: center;
+}
+@media(max-width: 1024px){
+    .seccion-1-inicio{
+        background-size: contain;
+    }
+    .clase-iso{
+        height: 12.5rem;
+    }
+    .clase-logo{
+        width: 37.5rem;
+    }
+    .seccion-2-inicio div p{
+        font-size: 1.3125rem;
+        padding: .625rem;
+    }
+    .div-valores-empresa div{
+        padding: .125rem;
+    }
+    .div-instagram img{
+        height: 15.625rem;
+        width: 12.5rem;
+    }
+    .seccion-4-inicio{
+        height: 25rem;
+    }
+}
+@media(max-width:768px){
+    .seccion-1-inicio{
+        background-size: contain;
+    }
+    .clase-iso{
+        height: 9.375rem;
+    }
+    .clase-logo{
+        width: 28.125rem;
+    }
+    .seccion-2-inicio div p{
+        font-size: 1.125rem;
+    }
+    .carrusel{
+        gap: 6.25rem;
+    }
+    .cambio-768{
+        display: none;
+    }
+}
+@media(max-width:425px){
+    .seccion-1-inicio{
+        background-size: cover;
+        padding-left: .625rem;
+        padding-right: .625rem; 
+    }
+    .clase-iso{
+        height: 6.25rem;
+    }
+    .clase-logo{
+        width: 18.75rem; 
+    }
+    .seccion-2-inicio{
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 0%;
+        height: 9.375rem;
+    }
+    .seccion-2-inicio div p{
+        font-size: .875rem;
+        margin-right: 0;
+        height: 7.5rem;
+        padding: .375rem;
+        margin: 0%;
+    }
+    .div-valores-empresa{
+        flex-direction: row;
+        justify-content: flex-start;
+        text-align: center;
+        padding: 0%;
+        margin: 0%;
+    }
+    .div-valores-empresa div{
+        width: 100%;
+        height: 1.875rem;
+        border: .125rem solid black;
+        border-right: .125rem solid black;
+        margin: 0%;
+    }
+    .div-valores-empresa div h2{
+        font-size: .9375rem;
+        text-align: center;
+    }
+    .seccion-3-inicio{
+        height: 13.75rem;
+        padding-top: 0;
+    }
+    .seccion-3-inicio h2{
+        padding-top: 0;
+    }
+    .categoria-carrusel{
+        height: 6.25rem;
+        width: 6.25rem;
+    }
+    .categoria-carrusel img{
+        height: 6.25rem;
+        width: 6.25rem;
+        object-fit: contain;
+    }
+    .categoria-carrusel h3{
+        font-size: .9375rem;
+    }
+    .carrusel{
+        gap: .625rem;
+    }
+    .seccion-4-inicio{
+        height: 15.625rem;
+    }
+    .seccion-4-inicio h2{
+        padding-top: 1.875rem;
+    }
+    .div-instagram{
+        padding: 0%;
+        margin: 0%;
+    }
+    .div-instagram a{
+        height: 6.25rem;
+        width: 6.25rem;
+    }
+    .div-instagram img{
+        height: 9.375rem;
+        width: 9.375rem;
+        object-fit: contain;
+        padding-right: 3.125rem;
+    }
+    footer{
+        font-size: .9375rem;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .ubicacion{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .ubicacion h4{
+        font-size: 1.25rem;
+    }
+    .contacto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .contacto h4{
+        font-size: 1.25rem;
+    }
+    .seguinos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .seguinos h4{
+        font-size: 1.25rem;
+    }
+    .seguinos a img{
+        padding-bottom: .3125rem;
+    }
+    .cambio-320{
+        display: none;
+    }
+}
+@media(max-width:375px){
+    .seccion-1-inicio{
+        background-image: none;
+        padding: 0%;
+    }
+    .clase-logo{
+        width: 16.25rem;
+    }
+    .seccion-2-inicio{
+        height: 7.5rem;
+    }
+    .seccion-2-inicio div p{
+        font-size: .875rem;
+        margin-right: 0;
+        height: 7.5rem;
+        padding: .375rem;
+        box-sizing: content-box;
+    }
+    .div-valores-empresa{
+        display: none;
+    }
+    .seccion-3-inicio h2{
+        font-size: 1.375rem;
+        padding-bottom: .9375rem;
+    }
+    .seccion-4-inicio{
+        height: 12.5rem;
+    }
+    .seccion-4-inicio h2{
+        padding-top: .625rem;
+        font-size: 1.375rem;
+    }
+    .div-instagram{
+        position: relative;
+        bottom: 1.875rem;
+    }
+    footer{
+        height: 10rem;
+    }
+    .ubicacion p{
+        font-size: .75rem;
+    }
+    .ubicacion h4{
+        font-size: .9375rem;
+    }
+    .contacto p{
+        font-size: .75rem;
+    }
+    .contacto h4{
+        font-size: .9375rem;
+    }
+    .seguinos img{
+        width: 2rem;
+        height: 2rem;
+        object-fit: contain;
+    }
+    .seguinos h4{
+        font-size: .9375rem;
+    }
+    .cambio-320{
+        display: none;
+    }
+}
+@media(max-width:320px){
+    .seccion-1-inicio{
+        padding: 0%;
+    }
+    .clase-iso{
+        padding-left: .4375rem;
+        padding-right: .3125rem;
+    }
+    .clase-logo{
+        width: 13.75rem;
+    }
+    .seccion-2-inicio div p{
+        font-size: .7813rem;
+        margin-right: 0;
+        height: 6.875rem;
+        padding: .375rem;
+    }
+    .seccion-3-inicio{
+        height: 12.5rem;
+    }
+    .seccion-3-inicio h2{
+        font-size: 1.25rem;
+    }
+    .categoria-carrusel img{
+        width: 5rem;
+        height: 5rem;
+    }
+    .categoria-carrusel h3{
+        font-size: .8125rem;
+    }
+    .cambio-320{
+        display: none;
+    }
+    .seccion-4-inicio{
+        height: 11.25rem;
+    }
+    .seccion-4-inicio h2{
+        font-size: 1.25rem;
+        padding-top: 0%;
+    }
+    .div-instagram{
+        position: relative;
+        bottom: 1.875rem;
+    }
+    footer{
+        height: 9.375rem;
+    }
+    .ubicacion p{
+        font-size: .75rem;
+    }
+    .ubicacion h4{
+        font-size: .875rem;
+    }
+    .ubicacion img{
+        width: 1.75rem;
+        height: 1.75rem;
+        object-fit: contain;
+    }
+    .contacto p{
+        font-size: .75rem;
+    }
+    .contacto h4{
+        font-size: .875rem;
+    }
+    .contacto img{
+        width: 1.75rem;
+        height: 1.75rem;
+        object-fit: contain;
+    }
+    .seguinos img{
+        width: 1.75rem;
+        height: 1.75rem;
+        object-fit: contain;
+    }
+    .seguinos h4{
+        font-size: .875rem;
+    }
+}
+.seccion-2-sobrenosotros{
+    text-align: justify;
+    background-color: #00425A;
+    color: #F0EFE7;
+}
+.seccion-2-sobrenosotros h2{
+    text-align: center;
+    text-decoration: underline;
+}
+.seccion-3-sobrenosotros{
+    text-align: justify;
+    background-color: #BFDB38;
+}
+.seccion-3-sobrenosotros h2{
+    text-decoration: underline;
+}
+.seccion-2-tienda{
+    background-color: #BFDB38;
+    width: 18.75rem;
+    text-align: center;
+}
+.seccion-2-tienda p{
+    font-size: 1.25rem;
+}
+.seccion-2-tienda h2{
+    text-decoration: underline;
+}
+.seccion-3-tienda{
+    text-align: center;
+    background-color: #BFDB38;
+    height: 93.75rem;
+    width: 62.5rem;
+}
+aside button{
+    background-color: #00425A;
+    color: #F0EFE7;
+    height: 9.375rem;
+    width: 12.5rem;
+    font-size: 1.875rem;
+}
+.seccion-2-registro{
+    background-color: #BFDB38;
+    width: 93.75rem;
+}
+.seccion-2-registro h2{
+    text-align: center;
+    text-decoration: underline;
+}
+.seccion-2-contacto{
+    background-color: #BFDB38;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 40vh;
+}
+.div-informacion-contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3.125rem;
+}
+.div-informacion-contacto h2{
+    text-decoration: underline;
+    font-size: 2.5rem;
+}
+.div-informacion-contacto img{
+    height: 2.5rem;
+    width: 2.5rem;
+    object-fit: contain;
+}
+.div-informacion-contacto p{
+    font-size: 1.25rem;
+}
+.div-informacion-contacto div{
+    display: flex;
+    flex-direction: row;
+}
+.div-redes{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3.125rem;
+}
+.div-redes a img{
+    height: 2.5rem;
+    width: 2.5rem;
+    object-fit: contain;
+}
+.div-redes a{
+    text-decoration: none;
+    font-style: normal;
+    font-size: 1.25rem;
+}
+.div-redes h2{
+    text-decoration: underline;
+    font-size: 2.5rem;
+}
+.footer-contacto{
+    display: flex;
+    height: 50vh;
+}
+
+
+
+
+
+
+
