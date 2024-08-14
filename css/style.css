@@ -394,6 +394,17 @@ footer{
     .cambio-320{
         display: none;
     }
+    .seccion-2-contacto{
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+    .div-informacion-contacto h2{
+        font-size: .9375rem;
+    }
+    .div-redes h2{
+        font-size: .9375rem;
+    }
 }
 @media(max-width:320px){
     .seccion-1-inicio{
@@ -472,6 +483,17 @@ footer{
     .seguinos h4{
         font-size: .875rem;
     }
+    .seccion-2-contacto{
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+    .div-informacion-contacto h2{
+        font-size: .9375rem;
+    }
+    .div-redes h2{
+        font-size: .9375rem;
+    }
 }
 .seccion-2-sobrenosotros{
     text-align: justify;
@@ -526,7 +548,7 @@ aside button{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    height: 40vh;
+    height: 50vh;
 }
 .div-informacion-contacto{
     display: flex;
@@ -565,7 +587,6 @@ aside button{
 }
 .div-redes a{
     text-decoration: none;
-    font-style: normal;
     font-size: 1.25rem;
 }
 .div-redes h2{
