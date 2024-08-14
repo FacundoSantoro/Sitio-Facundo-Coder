@@ -320,6 +320,17 @@ footer{
     .cambio-320{
         display: none;
     }
+    .seccion-2-contacto{
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+    .div-informacion-contacto h2{
+        font-size: 1.25rem;
+    }
+    .div-redes h2{
+        font-size: 1.25rem;
+    }
 }
 @media(max-width:375px){
     .seccion-1-inicio{
